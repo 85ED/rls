@@ -46,7 +46,9 @@
     });
   }
 
-  // ----- Active nav link on scroll -----
+  const SECTION_OFFSET    = 100; // px above fold to consider section active
+  const STAGGER_GROUP_SIZE = 4;  // number of elements per stagger group
+  const SUCCESS_MSG_MS    = 6000; // ms to show success message
   const sections = document.querySelectorAll('main section[id]');
   const navLinks  = document.querySelectorAll('.nav__link[href^="#"]');
 
@@ -54,7 +56,7 @@
     const activateLink = () => {
       let current = '';
       sections.forEach(section => {
-        if (window.scrollY >= section.offsetTop - 100) {
+        if (window.scrollY >= section.offsetTop - SECTION_OFFSET) {
           current = section.id;
         }
       });
@@ -119,7 +121,7 @@
 
     revealEls.forEach((el, i) => {
       el.classList.add('reveal');
-      el.style.transitionDelay = ((i % 4) * 80) + 'ms';
+      el.style.transitionDelay = ((i % STAGGER_GROUP_SIZE) * 80) + 'ms';
     });
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -197,7 +199,7 @@
         submitBtn.textContent = 'Enviar Mensagem';
         if (successMsg) {
           successMsg.textContent = '✓ Mensagem enviada com sucesso! Retornaremos em breve.';
-          setTimeout(() => { successMsg.textContent = ''; }, 6000);
+          setTimeout(() => { successMsg.textContent = ''; }, SUCCESS_MSG_MS);
         }
       }, 1200);
     });
