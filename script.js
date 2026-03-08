@@ -375,20 +375,22 @@ function animateStats() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const target = entry.target;
-                const text = target.textContent;
-                const hasPlus = text.includes('+');
-                const number = parseInt(text);
-
-                if (!isNaN(number)) {
+                const text = target.textContent.trim();
+                
+                const match = text.match(/^(\d+)(.*)/);
+                
+                if (match) {
+                    const number = parseInt(match[1]);
+                    const suffix = match[2]; 
                     let current = 0;
                     const increment = number / 50;
                     const timer = setInterval(() => {
                         current += increment;
                         if (current >= number) {
-                            target.textContent = number + (hasPlus ? '+' : '');
+                            target.textContent = number + suffix;
                             clearInterval(timer);
                         } else {
-                            target.textContent = Math.floor(current) + (hasPlus ? '+' : '');
+                            target.textContent = Math.floor(current) + suffix;
                         }
                     }, 30);
                 }
@@ -430,13 +432,11 @@ function initObrasSlideshow() {
         return;
     }
 
-    // Garantir que as imagens ficarão invisíveis até carregar
     slides.forEach(img => {
         img.onload = () => {
             img.classList.add('loaded');
         };
         
-        // Fallback para imagens que já estão em cache
         if (img.complete) {
             img.classList.add('loaded');
         }
