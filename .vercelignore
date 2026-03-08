@@ -1,0 +1,4 @@
+# Ignore arquivos e pastas que não devem ir para produção
+node_modules
+*.log
+.DS_Store
