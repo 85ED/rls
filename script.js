@@ -430,6 +430,18 @@ function initObrasSlideshow() {
         return;
     }
 
+    // Garantir que as imagens ficarão invisíveis até carregar
+    slides.forEach(img => {
+        img.onload = () => {
+            img.classList.add('loaded');
+        };
+        
+        // Fallback para imagens que já estão em cache
+        if (img.complete) {
+            img.classList.add('loaded');
+        }
+    });
+
     let currentSlide = 0;
     const slideInterval = 4000;
 

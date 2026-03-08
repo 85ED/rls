@@ -254,6 +254,10 @@ p {
     opacity: 1;
 }
 
+.hero-slider img.loaded {
+    opacity: 1;
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
