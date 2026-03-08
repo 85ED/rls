@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLS Engenharia e Consultoria | Engenharia Elétrica e Eficiência Energética em São Paulo</title>
+
+    <meta name="description"
+        content="RLS Engenharia: 17+ anos em soluções de engenharia elétrica, eficiência energética, laudos técnicos, NR-10, SPDA e subestações em São Paulo. Especialistas em infraestrutura crítica.">
+    <meta name="keywords"
+        content="engenharia elétrica São Paulo, eficiência energética, NR-10, PIE, SPDA, NBR 5410, NBR 14039, laudo técnico, subestações 15kV, prontuário instalações elétricas, consultoria energética">
+
+    <meta property="og:title" content="RLS Engenharia e Consultoria | A Energia que nos Move">
+    <meta property="og:description"
+        content="Especialistas em engenharia elétrica, eficiência energética e infraestrutura crítica com 17+ anos de experiência em São Paulo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rlseng.com.br">
+    <meta property="og:image" content="public/assets/img/logo.png">
+
+    <link rel="icon" type="image/png" href="public/assets/img/icon-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "RLS Engenharia e Consultoria",
+      "description": "Engenharia elétrica, eficiência energética e consultoria técnica especializada",
+      "url": "https://rlseng.com.br",
+    "logo": "public/assets/img/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Caçador de Esmeraldas, 245, Vila São José",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "04274-050",
+        "addressCountry": "BR"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00"
+    }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <img src="public/assets/img/logo.png" alt="RLS Engenharia e Consultoria">
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+                <li><a href="#areas-atuacao" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="#eficiencia" class="nav-link">Eficiência Energética</a></li>
+                <li><a href="#mobilidade-eletrica" class="nav-link">Mobilidade Elétrica</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-slider">
+            <img src="https://images.unsplash.com/photo-1621905252472-e924bea50feb?w=1920&h=1080&fit=crop" alt="Obra 1"
+                class="active">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&h=1080&fit=crop" alt="Obra 2">
+            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&h=1080&fit=crop" alt="Obra 3">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&h=1080&fit=crop" alt="Obra 4">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&h=1080&fit=crop" alt="Obra 5">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <div class="hero-label">Engenharia de Alto Nível</div>
+                    <h1 class="hero-title">A Energia que nos <span class="highlight">Move</span></h1>
+                    <p class="hero-subtitle">Soluções estratégicas em engenharia elétrica, eficiência energética e
+                        infraestrutura crítica com rigor técnico e compromisso absoluto com resultados.</p>
+
+                    <div class="hero-cta">
+                        <a href="https://wa.me/62984080163" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Fale Conosco
+                        </a>
+                        <a href="mailto:contato@rlseng.com.br" class="btn btn-secondary">Enviar E-mail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+            <span>Role para baixo</span>
+        </div>
+    </section>
+
+    <section class="about-section" id="quem-somos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image parallax-image">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=1000&fit=crop"
+                        alt="Engenharia Elétrica" class="parallax-img">
+                    <div class="about-image-overlay"></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Quem Somos</span>
+                    <h2>Experiência que Constrói <span class="highlight-text">Confiança</span></h2>
+                    <p class="lead">Com mais de 17 anos de atuação em projetos de alta complexidade, a RLS Engenharia
+                        nasceu para transformar sistemas críticos de instalações prediais e industriais em
+                        infraestruturas seguras, eficientes e economicamente otimizadas.</p>
+                    <p>Nossa fundação é consolidada pela experiência direta no gerenciamento de projetos e no
+                        planejamento com foco na entrega de soluções de engenharia que suportam operações críticas e
+                        infraestruturas robustas.</p>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-number">17+</div>
+                            <div class="stat-label">anos em projetos elétricos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">conformidade normativa</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24h</div>
+                            <div class="stat-label">suporte técnico</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="segments-section">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-label">Segmentos</span>
+                <h2>Segmentos <span class="highlight-text">Atendidos</span></h2>
+            </div>
+            <div class="segments-scroll">
+                <div class="segment-card">
+                    <div class="segment-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop')">
+                    </div>
+                    <div class="segment-content">
+                        <div class="segment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                        </div>
+                        <h4>Indústria</h4>
+                        <p>Automobilística, Alimentícia e Farmacêutica</p>
+                    </div>
+                </div>
+                <div class="segment-card">
+                    <div class="segment-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop')">
+                    </div>
+                    <div class="segment-content">
+                        <div class="segment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" />
+                                <rect x="2" y="14" width="20" height="8" rx="2" />
+                                <line x1="6" y1="6" x2="6.01" y2="6" />
+                                <line x1="6" y1="18" x2="6.01" y2="18" />
+                            </svg>
+                        </div>
+                        <h4>Data Centers</h4>
+                        <p>Alta disponibilidade e infraestrutura crítica</p>
+                    </div>
+                </div>
+                <div class="segment-card">
+                    <div class="segment-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop')">
+                    </div>
+                    <div class="segment-content">
+                        <div class="segment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h4>Hospitalar</h4>
+                        <p>Hospitais de grande porte</p>
+                    </div>
+                </div>
+                <div class="segment-card">
+                    <div class="segment-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop')">
+                    </div>
+                    <div class="segment-content">
+                        <div class="segment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </div>
+                        <h4>Comercial</h4>
+                        <p>Shopping centers e edifícios corporativos</p>
+                    </div>
+                </div>
+                <div class="segment-card">
+                    <div class="segment-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&h=400&fit=crop')">
+                    </div>
+                    <div class="segment-content">
+                        <div class="segment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            </svg>
+                        </div>
+                        <h4>Residencial</h4>
+                        <p>Empreendimentos de grande porte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="areas-atuacao">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-label">Áreas de Atuação</span>
+                <h2>Soluções Completas em <span class="highlight-text">Engenharia Elétrica</span></h2>
+            </div>
+            <div class="services-asymmetric">
+                <div class="service-featured parallax-image">
+                    <div class="service-image parallax-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=600&fit=crop')">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                            </svg>
+                        </div>
+                        <h3>Laudos e Perícias Técnicas</h3>
+                        <p>Elaboração de laudos técnicos, perícias e vistorias especializadas com rigor técnico e
+                            segurança jurídica.</p>
+                    </div>
+                </div>
+
+                <div class="services-grid-mini">
+                    <div class="service-mini">
+                        <div class="service-icon-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Projetos Elétricos</h4>
+                            <p>Projetos elétricos completos para instalações prediais e industriais, incluindo cabines
+                                primárias e subestações 15kV.</p>
+                        </div>
+                    </div>
+                    <div class="service-mini">
+                        <div class="service-icon-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>SPDA e Aterramento</h4>
+                            <p>Sistema de Proteção contra Descargas Atmosféricas (NBR 5419) e medição de resistividade
+                                do solo.</p>
+                        </div>
+                    </div>
+                    <div class="service-mini">
+                        <div class="service-icon-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Prontuário NR-10</h4>
+                            <p>Elaboração e gestão do Prontuário de Instalações Elétricas (PIE) conforme NR-10.</p>
+                        </div>
+                    </div>
+                    <div class="service-mini">
+                        <div class="service-icon-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Automação Predial</h4>
+                            <p>Sistemas de automação residencial e predial para máxima eficiência operacional.</p>
+                        </div>
+                    </div>
+                    <div class="service-mini">
+                        <div class="service-icon-mini">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5" />
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Energia Solar</h4>
+                            <p>Sistemas de geração de energia solar fotovoltaica com análise de viabilidade técnica e
+                                financeira.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="efficiency-section-new" id="eficiencia">
+        <div class="container-wide">
+            <div class="section-header-center">
+                <span class="section-label light">Eficiência Energética</span>
+                <h2 class="light-title">Inteligência que <span class="highlight-text">Reduz Custos</span></h2>
+                <p class="section-subtitle light-subtitle">Uma instalação elétrica de alta performance deve ser
+                    invisível em problemas e evidente em economia.</p>
+            </div>
+
+            <div class="efficiency-grid-new">
+                <div class="efficiency-card-new">
+                    <div class="efficiency-number">01</div>
+                    <div class="efficiency-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3>Diagnóstico de Qualidade de Energia</h3>
+                    <p>Medições precisas para identificar distúrbios, harmônicas e desequilíbrios que impactam a
+                        eficiência operacional.</p>
+                </div>
+
+                <div class="efficiency-card-new">
+                    <div class="efficiency-number">02</div>
+                    <div class="efficiency-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3>Análise de Custo do kWh</h3>
+                    <p>Avaliação estratégica do tipo de contrato para redução significativa do custo de energia.</p>
+                </div>
+
+                <div class="efficiency-card-new">
+                    <div class="efficiency-number">03</div>
+                    <div class="efficiency-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18" />
+                            <path d="M9 21V9" />
+                        </svg>
+                    </div>
+                    <h3>Readequação de Cargas</h3>
+                    <p>Análise detalhada do perfil de consumo para otimização de subestações e distribuição de energia.
+                    </p>
+                </div>
+
+                <div class="efficiency-card-new">
+                    <div class="efficiency-number">04</div>
+                    <div class="efficiency-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <line x1="10" y1="9" x2="8" y2="9" />
+                        </svg>
+                    </div>
+                    <h3>Gestão Físico-Financeira</h3>
+                    <p>Plano de ação completo com avaliação de ROI, economia projetada e cronograma de implementação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section-new">
+        <div class="container">
+            <div class="benefits-hero">
+                <span class="section-label">Benefícios Diretos</span>
+                <h2>Resultados que Transformam<br>sua <span class="highlight-text-light">Operação</span></h2>
+                <p class="benefits-lead">Investimento em engenharia elétrica que se traduz em economia, segurança e
+                    valorização patrimonial</p>
+            </div>
+
+            <div class="benefits-grid-new">
+                <div class="benefit-card-new">
+                    <div class="benefit-visual">
+                        <div class="benefit-icon-large">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23" />
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Redução Imediata de Custos</h3>
+                    <p>Queda nos custos fixos operacionais com soluções implementadas que geram economia mensurável
+                        desde o primeiro mês.</p>
+                </div>
+
+                <div class="benefit-card-new">
+                    <div class="benefit-visual">
+                        <div class="benefit-icon-large">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Segurança Jurídica Total</h3>
+                    <p>Instalações adequadas às normas NBR 5410, NBR 14039 e NR-10, eliminando riscos trabalhistas e
+                        garantindo conformidade.</p>
+                </div>
+
+                <div class="benefit-card-new">
+                    <div class="benefit-visual">
+                        <div class="benefit-icon-large">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Valorização do Ativo</h3>
+                    <p>Edificações eficientes com maior valor de mercado, apelo comercial e diferencial competitivo para
+                        locação e venda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="differentials-section" id="diferenciais">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-label">Diferenciais Competitivos</span>
+                <h2>O que nos <span class="highlight-text">Diferencia</span></h2>
+            </div>
+            <div class="differentials-grid-2x2">
+                <div class="differential-item">
+                    <div class="differential-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                    </div>
+                    <h3>Visão Sistêmica</h3>
+                    <p>Analisamos a viabilidade técnica e financeira de cada investimento, garantindo eficiência do
+                        projeto à execução.</p>
+                </div>
+                <div class="differential-item">
+                    <div class="differential-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 20h9" />
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                        </svg>
+                    </div>
+                    <h3>Gestão Físico-Financeira</h3>
+                    <p>Entrega de relatórios, cronogramas físico-financeiros e medições rigorosas de materiais e mão de
+                        obra.</p>
+                </div>
+                <div class="differential-item">
+                    <div class="differential-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Liderança Multidisciplinar</h3>
+                    <p>Experiência na gestão de equipes diversas (Elétrica, Civil, Mecânica e Segurança) focando em
+                        metas e prazos.</p>
+                </div>
+                <div class="differential-item">
+                    <div class="differential-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                    </div>
+                    <h3>Rigor Técnico</h3>
+                    <p>Reconhecidos pelo senso crítico de urgência e exigência máxima na execução eletromecânica e de
+                        sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ev-infrastructure-section" id="mobilidade-eletrica">
+        <div class="container">
+            <div class="ev-grid">
+                <div class="ev-content">
+                    <span class="section-label">Mobilidade Elétrica</span>
+                    <h2>A Infraestrutura do Seu Condomínio Está Preparada para a <span class="highlight-text">Mobilidade
+                            Elétrica?</span></h2>
+
+                    <p class="ev-intro">Com a recente regulamentação no Estado de São Paulo sobre instalação de
+                        carregadores de veículos elétricos em edifícios, a questão deixou de ser apenas legal e
+                        tornou-se fundamentalmente técnica.</p>
+
+                    <p class="ev-highlight">Além da autorização formal, é <strong>indispensável verificar se a
+                            infraestrutura elétrica suporta</strong> a demanda adicional sem comprometer a segurança e a
+                        eficiência do sistema.</p>
+
+                    <div class="ev-problems">
+                        <h3>Riscos de uma Análise Inadequada</h3>
+                        <div class="ev-problems-grid">
+                            <div class="ev-problem-item">
+                                <div class="ev-problem-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                        <line x1="12" y1="9" x2="12" y2="13" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                                    </svg>
+                                </div>
+                                <span>Sobrecarga da prumada elétrica</span>
+                            </div>
+                            <div class="ev-problem-item">
+                                <div class="ev-problem-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                        <line x1="12" y1="9" x2="12" y2="13" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                                    </svg>
+                                </div>
+                                <span>Subdimensionamento da entrada de energia</span>
+                            </div>
+                            <div class="ev-problem-item">
+                                <div class="ev-problem-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                        <line x1="12" y1="9" x2="12" y2="13" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                                    </svg>
+                                </div>
+                                <span>Aumento crítico de demanda simultânea</span>
+                            </div>
+                            <div class="ev-problem-item">
+                                <div class="ev-problem-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                        <line x1="12" y1="9" x2="12" y2="13" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                                    </svg>
+                                </div>
+                                <span>Não conformidade com NBR 5410, 14039 e normas da concessionária</span>
+                            </div>
+                            <div class="ev-problem-item">
+                                <div class="ev-problem-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                        <line x1="12" y1="9" x2="12" y2="13" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                                    </svg>
+                                </div>
+                                <span>Risco técnico, jurídico e de segurança patrimonial</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="ev-visual">
+                    <div class="ev-image parallax-image">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&h=1000&fit=crop"
+                            alt="Carregador de Veículo Elétrico" class="parallax-img">
+                        <div class="ev-image-overlay"></div>
+                        <div class="ev-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                            <div class="ev-badge-text">
+                                <strong>Infraestrutura</strong>
+                                <span>Mobilidade Elétrica</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ev-stats-mini">
+                        <div class="ev-stat-mini">
+                            <div class="ev-stat-number">7kW - 22kW</div>
+                            <div class="ev-stat-label">Potência típica por carregador</div>
+                        </div>
+                        <div class="ev-stat-mini">
+                            <div class="ev-stat-number">NBR 5410</div>
+                            <div class="ev-stat-label">Conformidade normativa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ev-solutions">
+                <div class="ev-solutions-header">
+                    <h3>Nossa Solução Técnica Completa</h3>
+                    <p class="ev-solutions-subtitle">Metodologia estruturada para garantir segurança, conformidade e
+                        eficiência</p>
+                </div>
+
+                <div class="ev-solutions-grid">
+                    <div class="ev-solution-card">
+                        <div class="solution-number">01</div>
+                        <div class="solution-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                        </div>
+                        <h4>Estudo de carga instalada x demanda</h4>
+                        <p>Análise detalhada da capacidade atual e futura</p>
+                    </div>
+
+                    <div class="ev-solution-card">
+                        <div class="solution-number">02</div>
+                        <div class="solution-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <h4>Análise de fator de simultaneidade</h4>
+                        <p>Modelagem de picos de consumo e gestão de demanda</p>
+                    </div>
+
+                    <div class="ev-solution-card">
+                        <div class="solution-number">03</div>
+                        <div class="solution-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M9 21V9" />
+                            </svg>
+                        </div>
+                        <h4>Verificação da capacidade da subestação</h4>
+                        <p>Avaliação técnica completa do sistema existente</p>
+                    </div>
+
+                    <div class="ev-solution-card">
+                        <div class="solution-number">04</div>
+                        <div class="solution-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
+                        </div>
+                        <h4>Projeto técnico com emissão de ART</h4>
+                        <p>Documentação formal por profissional habilitado</p>
+                    </div>
+
+                    <div class="ev-solution-card ev-solution-card-featured">
+                        <div class="solution-number">05</div>
+                        <div class="solution-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="7.5 4.21 12 6.81 16.5 4.21" />
+                                <polyline points="7.5 19.79 7.5 14.6 3 12" />
+                                <polyline points="21 12 16.5 14.6 16.5 19.79" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h4>Planejamento de expansão futura</h4>
+                        <p>Preparação para crescimento da frota elétrica</p>
+                    </div>
+                </div>
+
+                <div class="ev-cta-container">
+                    <a href="#contato" class="btn btn-primary btn-large">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <line x1="10" y1="9" x2="8" y2="9" />
+                        </svg>
+                        Solicitar Análise Técnica
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-label">Projetos</span>
+                <h2>Projetos e <span class="highlight-text">Clientes</span> Atendidos</h2>
+                <p class="section-subtitle">Parcerias estratégicas com empresas líderes em seus segmentos</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-placeholder">
+                    <div class="client-logo-placeholder"></div>
+                </div>
+                <div class="client-placeholder">
+                    <div class="client-logo-placeholder"></div>
+                </div>
+                <div class="client-placeholder">
+                    <div class="client-logo-placeholder"></div>
+                </div>
+                <div class="client-placeholder">
+                    <div class="client-logo-placeholder"></div>
+                </div>
+                <div class="client-placeholder">
+                    <div class="client-logo-placeholder"></div>
+                </div>
+                <div class="client-placeholder">
+                    <div class="client-logo-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section-dark">
+        <div class="container">
+            <div class="cta-content-center">
+                <h2>Transforme Desafios em Soluções de Infraestrutura</h2>
+                <p>Entre em contato e descubra como podemos otimizar sua operação com engenharia de alto nível.</p>
+                <a href="#contato" class="btn btn-primary btn-large">Solicite uma Consultoria</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-label">Contato</span>
+                <h2>Fale <span class="highlight-text">Conosco</span></h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info-modern">
+                    <h3>RLS Engenharia e Consultoria</h3>
+                    <p class="contact-tagline">Soluções estratégicas em engenharia elétrica</p>
+
+                    <div class="contact-item-modern">
+                        <div class="contact-icon-modern">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-text-modern">
+                            <strong>Endereço</strong>
+                            <p>Rua Caçador de Esmeraldas, 245<br>Vila São José, Ipiranga<br>São Paulo - SP, CEP
+                                04274-050</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item-modern">
+                        <div class="contact-icon-modern">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div class="contact-text-modern">
+                            <strong>Horário de Atendimento</strong>
+                            <p>Segunda a Sexta-feira<br>08:00 às 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-buttons-modern">
+                        <a href="https://wa.me/62984080163" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            WhatsApp - (62) 98408-0163
+                        </a>
+                        <a href="mailto:contato@rlseng.com.br" class="btn btn-email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            contato@rlseng.com.br
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-map-modern">
+                    <iframe
+                        src="https://www.google.com/maps?q=Rua+Caçador+de+Esmeraldas,+245,+São+Paulo,+SP&output=embed"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-content-modern">
+                <div class="footer-brand-modern">
+                    <img src="public/assets/img/logo.png" alt="RLS Engenharia">
+                    <p>A energia que nos move</p>
+                </div>
+                <div class="footer-links-modern">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services-modern">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Eficiência Energética</li>
+                        <li>Laudos Técnicos</li>
+                        <li>NR-10 e PIE</li>
+                        <li>SPDA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-modern">
+                <p>&copy; 2026 RLS Engenharia e Consultoria. Todos os direitos reservados.</p>
+                <p class="footer-dev">Desenvolvido por <strong><a href="https://wa.me/11965643020" target="_blank"
+                            rel="noopener noreferrer" title="WhatsApp CODE85" class="code85-link">CODE85</a></strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
