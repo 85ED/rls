@@ -1,3 +1,31 @@
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9999;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border-radius: 50%;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.whatsapp-float:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    transform: translateY(-4px) scale(1.05);
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        bottom: 20px;
+        right: 16px;
+    }
+}
 
 .seo-content{
 margin:80px 0;
